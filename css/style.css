@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdcae1; /* Rosa pastel como fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #fff; /* Fondo blanco para el encabezado */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #8f6277; /* Tono más oscuro de rosa pastel */
+}
+
+/* Texto de párrafos */
+p {
+    color: #ad7e94; /* Tono medio de rosa pastel */
+    line-height: 1.5;
+}
+
+/* Lista de productos destacados */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    color: #cd9cb2; /* Tono claro de rosa pastel */
+    margin-bottom: 10px;
+}
+
+/* Información de contacto */
+section {
+    background-color: #ffe1ee; /* Fondo rosa pastel claro */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #fff; /* Fondo blanco para el pie de página */
+    padding: 10px;
+    text-align: center;
+    color: #8f6277; /* Tono más oscuro de rosa pastel */
+}
