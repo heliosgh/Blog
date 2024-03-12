@@ -6,22 +6,23 @@ body {
     padding: 0;
 }
 
-/* Encabezado */
-header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+
 /*Menú */
 #menu {
-    background-color: var(--color-claro); /* Fondo blanco */
+    background-color: #fdcae1; /* Fondo blanco */
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    line-height: 2em;
 }
 
 #menu ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex; /* Esto hará que los elementos de la lista se muestren en una línea */
     justify-content: space-around; /* Esto distribuirá los elementos de la lista de manera uniforme a lo largo de la línea */
-    padding: 0;
+    /*padding: 0;*/
 }
 
 #menu ul li a {
@@ -33,6 +34,30 @@ header {
 }
 
 
+
+/* Encabezado */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    text-align: center;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+}
+
 /* Logo */
 img {
     max-width: 100%;
@@ -41,14 +66,6 @@ img {
 }
 
 /* ... (otros estilos) ... */
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
-}
 
 /* Estilos para el tema claro */
 body.light {
@@ -60,6 +77,18 @@ body.light {
 body.dark {
     background-color: #333333;
     color: #ffffff;
+}
+
+body.dark #menu  {
+    background-color: #333333;
+}
+
+body.dark header {
+    color: #333333;
+}
+
+body.dark #PRODUCTOS {
+    background-color: #333333;
 }
 
 
@@ -126,4 +155,96 @@ p {
   h2 {
     text-align: justify;
   }
+
+/* Estilos para el section Productos y el boton de cambio de tema*/
+
+#PRODUCTOS {
+    background-color: #fdcae1;
+}
+
+#PRODUCTOS h2 {
+    display: flex;
+}
+
+/*estilos del boton de cambio de tema*/
+
+#themeButton {
+    background-color: rgb(134, 14, 108); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s; /* Efecto de transición suave al cambiar de color */
+    margin-left: auto;
+    font-size: 1ex;
+}
+
+#themeButton:hover {
+    background-color: gray; /* Color de fondo del botón al pasar el cursor */
+}
+
+
+/*Estilos para el contenido*/
+
+#contenido {
+    padding: 30px;
+}
+
+#contenido h2 {
+    text-align: center;
+}
+
+#contenido section {
+    margin-bottom: 30px;
+}
+
+#UBICACIÓN {
+    justify-content: center;
+    text-align: center;
+}
+
+#UBICACIÓN p {
+    justify-content: center;
+    text-align: center;
+}
+
+#UBICACIÓN h2 {
+    margin-bottom: 30px;
+}
+
+#UBICACIÓN iframe {
+    width: 600px;
+    height: 200px;
+    border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#CONTACTO {
+    font-size: 1em;
+}
+
+#whatsapp-logo {
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0%;
+}
+
+#whatsapp-link {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    padding-left: 0.5em;
+}
+
+
+.youtube-video {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
