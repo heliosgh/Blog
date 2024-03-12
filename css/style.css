@@ -12,6 +12,26 @@ header {
     padding: 20px;
     text-align: center;
 }
+/*Menú */
+#menu {
+    background-color: var(--color-claro); /* Fondo blanco */
+}
+
+#menu ul {
+    list-style: none;
+    display: flex; /* Esto hará que los elementos de la lista se muestren en una línea */
+    justify-content: space-around; /* Esto distribuirá los elementos de la lista de manera uniforme a lo largo de la línea */
+    padding: 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: var(--color-primario); /* Fuente rosa pastel */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 
 /* Logo */
 img {
@@ -41,3 +61,69 @@ body.dark {
     background-color: #333333;
     color: #ffffff;
 }
+
+
+/* Estilos para pantallas de tamaño grande (por ejemplo, computadoras de escritorio) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para pantallas de tamaño mediano (por ejemplo, tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas de tamaño pequeño (por ejemplo, teléfonos móviles) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Estilo del contenedor de productos */
+.contenedor-productos {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.producto {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    background-color: #dfb9ca;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+  }
+
+  h2 {
+    text-align: justify;
+  }
+

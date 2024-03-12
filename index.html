@@ -5,36 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Tienda de Antifaces</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Agrega tus estilos CSS aquí -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
 <body>
-    <div>
-    <ul>
-        <a href="#NOSOTROS"><li>NOSOTROS</li></a>
-        <a href="#PRODUCTOS"><li>PRODUCTOS</li></a>
-        <a href="#UBICACIÓN"><li>UBICACIÓN</li></a>
-    </ul>
-</div>
-  
+    <div id="menu">
+        <ul>
+            <li><a href="#PRODUCTOS">PRODUCTOS</a></li>
+            <li><a href="#MISION">MISION</a></li>
+            <li><a href="#VISION">VISIÓN</a></li>
+            <li><a href="#OBJETIVO">OBJETIVO</a></li>
+            <li><a href="#NOSOTROS">NOSOTROS</a></li>
+            <li><a href="#UBICACIÓN">UBICACIÓN</a></li>
+        </ul>
+    </div>
+    
+    <header>
+        <img src="imagenes/logo.jpeg" alt="Logo de la tienda"> <!-- Agrega tu logo aquí -->
         <h1>Mi Tienda de Antifaces</h1>
         <p>Encuentra los antifaces más cómodos para un sueño reparador.</p>
-        <img src="imagenes/logo.jpeg" alt="Logo de la tienda"> <!-- Agrega tu logo aquí -->
     </header>
 
-    <section>
-        <h2>Productos Destacados</h2>
-        <!-- Lista de productos -->
-        <ul>
-            <li>Antifaz 3D ajustable con bloqueo de luz</li>
-            <!-- Agrega más productos -->
-        </ul>
-    </section>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/c1.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/c2.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/c3.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/c4.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/c5.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/c6.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     <button id="themeButton">Cambiar Tema</button> <!-- Botón para cambiar el tema -->
 
+    <section id="PRODUCTOS">
+        <h2>Productos</h2>
+        <div class="contenedor-productos">
+            <div class="producto">
+                <img src="imagenes/antifaz1.jpg" alt="Antifaz 1">
+                <p>Descripción del antifaz 1</p>
+            </div>
+            <div class="producto">
+                <img src="imagenes/gel.jpg" alt="Antifaz 2">
+                <p>Descripción del antifaz 2</p>
+            </div>
+            <!-- Agrega más productos según sea necesario -->
+        </div>
+    </section>
+
+<div id="contenido">
+
+    <section id="NOSOTROS">
+        <h2>Nosotros</h2>
+        <p>SLa empresa LYDSVA, se dedica a la elaboración y comercialización de antifaces relajantes con vibración y gel, comenzó en el año 2023 con un equipo emprendedor proveniente de estudiantes de la Licenciatura en Innovación de Negocios área de mercadotecnia de la Universidad Tecnológica de Huejotzingo, Puebla. 
+           El equipo de mercadotecnia, compuesto por estudiantes, compartían una visión de crear productos innovadores que pudieran impactar positivamente la vida de las personas. Fue durante un proyecto de clase donde surgió la idea de desarrollar un antifaz relajante que combinara tecnología de vibración con gel para proporcionar una experiencia de relajación más completa.
+           Impulsados por su pasión por la innovación, Trabajaron en colaboración para desarrollar prototipos funcionales para crear un producto atractivo y ergonómico que satisficiera las necesidades del mercado.
+           Una vez que tuvieron un prototipo viable, el equipo se centró en destacar los beneficios del antifaz relajante LYDSVA, resaltando su capacidad para aliviar el estrés, mejorar la calidad del sueño y promover la relajación.</p>
+   </section>
+   <section id="MISION">
+        <h2>Misión</h2>
+        <p>Somos una empresa dedicada a la elaboración de antifaz relajante para cubrir necesidades como desinflamación en párpados y masaje de los consumidores.</p>
+   </section>
+   <section id="VISION">
+       <h2>Visión</h2>
+       <p>Posicionarnos como la primera opción en la elaboración y venta de antifaces relajantes.</p>
+   </section>
+   <section id="OBJETIVO">
+       <h2>Objetivo</h2>
+       <p>Conseguir la aceptación de nuestro mercado meta dentro del área comercial. Elaborar y distribuir los mejores antifaces relajantes para el cuidado facial y disminuir el estrés.</p>
+   </section>
+    <section id="UBICACIÓN">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en la ciudad de México. Visítanos en nuestra tienda física o contáctanos a través de nuestro sitio web para más información.</p>
+    </section>
+
+</div>
     <footer>
         <p>© 2024 Mi Tienda de Antifaces</p>
     </footer>
 
     <script src="js/scripts.js"></script> <!-- Agrega tus scripts de JavaScript aquí -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
