@@ -21,3 +21,23 @@ img {
 }
 
 /* ... (otros estilos) ... */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Transición suave para cambios de color */
+}
+
+/* Estilos para el tema claro */
+body.light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Estilos para el tema oscuro */
+body.dark {
+    background-color: #333333;
+    color: #ffffff;
+}

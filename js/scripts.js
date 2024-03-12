@@ -1,5 +1,7 @@
-// Cambia el color de fondo al hacer clic en el botón
-const boton = document.querySelector('#miBoton');
-boton.addEventListener('click', () => {
-    document.body.style.backgroundColor = 'lightblue';
+
+const themeButton = document.getElementById('themeButton');
+const body = document.body;
+
+themeButton.addEventListener('click', () => {
+    body.classList.toggle('dark'); // Alterna entre los temas claro y oscuro
 });
